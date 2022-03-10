@@ -1,1 +1,1 @@
-# settings
+# Personal Mac Setup
