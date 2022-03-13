@@ -1,0 +1,79 @@
+{
+  // Use vim hjkl to navigate folders.
+  "workbench.list.keyboardNavigation": "simple",
+  "workbench.list.automaticKeyboardNavigation": false,
+  "workbench.colorTheme": "Plastic",
+  "workbench.startupEditor": "none",
+  "window.zoomLevel": 0,
+  "window.newWindowDimensions": "inherit",
+  "breadcrumbs.enabled": false,
+  "gitlens.showWelcomeOnInstall": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "debug.disassemblyView.showSourceCode": false,
+  "css.lint.unknownAtRules": "ignore",
+  "css.validate": false,
+  "editor.tabSize": 2,
+  "editor.wordWrap": "on",
+  "editor.codeLens": false,
+  "editor.lineNumbers": "on",
+  "editor.rename.enablePreview": false,
+  "editor.folding": false,
+  "editor.glyphMargin": false,
+  "editor.formatOnSave": true,
+  "editor.cursorStyle": "line",
+  "editor.insertSpaces": false,
+  "editor.hover.enabled": true,
+  "editor.fontLigatures": true,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "none",
+  "editor.renderControlCharacters": false,
+  "editor.suggestSelection": "first",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "explorer.compactFolders": false,
+  // Keep text highlighted after searching in vim.
+  "vim.hlsearch": true,
+  "vim.timeout": 250,
+  "vim.useSystemClipboard": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["k", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.useCtrlKeys": true,
+  "vim.handleKeys": {
+    "<C-f>": true,
+    "<C-a>": false
+  },
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["v", "n"],
+      "after": ["v", "g", "_", "y"]
+    },
+    {
+      "before": ["d", "n"],
+      "after": ["d", "g", "_"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    }
+  ],
+  // vim mode viwy viwcmd+d p issue hack
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["p"],
+      "commands": ["editor.action.clipboardPasteAction"]
+    }
+  ]
+}
