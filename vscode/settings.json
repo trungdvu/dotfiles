@@ -1,10 +1,15 @@
 {
-  // Use vim hjkl to navigate folders.
   "workbench.list.keyboardNavigation": "simple",
   "workbench.list.automaticKeyboardNavigation": false,
   "workbench.startupEditor": "none",
   "window.newWindowDimensions": "inherit",
   "workbench.editor.untitled.hint": "hidden",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "Plastic",
+  "turboConsoleLog.includeFileNameAndLineNum": false,
+  "turboConsoleLog.insertEnclosingClass": false,
+  "turboConsoleLog.insertEnclosingFunction": false,
+  "git.autofetch": true,
   "breadcrumbs.enabled": false,
   "gitlens.showWelcomeOnInstall": false,
   "gitlens.codeLens.authors.enabled": false,
@@ -17,17 +22,15 @@
   "css.lint.unknownAtRules": "ignore",
   "css.validate": false,
   "editor.tabSize": 2,
-  "editor.rename.enablePreview": false,
   "editor.formatOnSave": true,
   "editor.minimap.enabled": false,
   "editor.renderControlCharacters": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
   "editor.quickSuggestions": {
     "strings": true
   },
+  "extensions.ignoreRecommendations": true,
   "explorer.compactFolders": false,
-  // Keep text highlighted after searching in vim.
   "vim.hlsearch": true,
   "vim.timeout": 250,
   "vim.useSystemClipboard": true,
@@ -73,13 +76,5 @@
       "before": ["p"],
       "commands": ["editor.action.clipboardPasteAction"]
     }
-  ],
-  "workbench.iconTheme": "vscode-icons",
-  "workbench.colorTheme": "Plastic",
-  "turboConsoleLog.includeFileNameAndLineNum": false,
-  "turboConsoleLog.insertEnclosingClass": false,
-  "turboConsoleLog.insertEnclosingFunction": false,
-  "git.autofetch": "all",
-  "window.zoomLevel": 1,
-  "extensions.ignoreRecommendations": true
+  ]
 }
