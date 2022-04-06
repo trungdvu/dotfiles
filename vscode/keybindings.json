@@ -1,27 +1,12 @@
 [
-  // Move to the previous/next editor.
-  {
-    "key": "cmd+k",
-    "command": "workbench.action.nextEditor"
-  },
-  {
-    "key": "cmd+j",
-    "command": "workbench.action.previousEditor"
-  },
   // Move active editor left or right (useful for full-stack web dev).
   {
     "key": "cmd+ctrl+j",
-    "command": "moveActiveEditor",
-    "args": {
-      "to": "left"
-    }
+    "command": "workbench.action.nextEditor"
   },
   {
     "key": "cmd+ctrl+k",
-    "command": "moveActiveEditor",
-    "args": {
-      "to": "right"
-    }
+    "command": "workbench.action.previousEditor"
   },
   // Quickly debug with console log.
   {
@@ -43,14 +28,15 @@
     "command": "selectPrevSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
   },
+  // Ensure that tab button works in vim.
   {
     "key": "tab",
     "command": "tab",
-    "when": "editorTextFocus && !editorTabMovesFocus"
+    "when": "editorTextFocus && !editorTabMovesFocus && !suggestWidgetVisible"
   },
   {
     "key": "shift+tab",
     "command": "outdent",
-    "when": "editorTextFocus && !editorTabMovesFocus"
+    "when": "editorTextFocus && !editorTabMovesFocus  && !suggestWidgetVisible"
   }
 ]
