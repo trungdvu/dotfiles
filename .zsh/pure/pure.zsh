@@ -78,7 +78,7 @@ prompt_pure_set_title() {
 	esac
 
 	# Set title atomically in one print statement so that it works when XTRACE is enabled.
-	print -n $opts $'\e]0;'${hostname}${2}$'\a'
+	print -n $opts $'\e]0;'${hostname}${2}$''
 }
 
 prompt_pure_preexec() {
@@ -813,7 +813,7 @@ prompt_pure_setup() {
 		git:branch           green
 		git:branch:cached    red
 		git:action           yellow
-		git:dirty            218
+		git:dirty            green
 		host                 242
 		path                 cyan
 		prompt:error         red
