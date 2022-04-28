@@ -78,7 +78,7 @@ prompt_pure_set_title() {
 	esac
 
 	# Set title atomically in one print statement so that it works when XTRACE is enabled.
-	print -n $opts $'\e]0;'${hostname}${2}$''
+	print -n $opts $'\e]0;'${hostname}${2}$'\a'
 }
 
 prompt_pure_preexec() {
