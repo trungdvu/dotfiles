@@ -5,7 +5,6 @@
   "window.newWindowDimensions": "inherit",
   "workbench.editor.untitled.hint": "hidden",
   "workbench.iconTheme": "vscode-icons",
-  "workbench.colorTheme": "Plastic",
   "turboConsoleLog.includeFileNameAndLineNum": false,
   "turboConsoleLog.insertEnclosingClass": false,
   "turboConsoleLog.insertEnclosingFunction": false,
@@ -76,5 +75,30 @@
       "before": ["p"],
       "commands": ["editor.action.clipboardPasteAction"]
     }
-  ]
+  ],
+  "git.suggestSmartCommit": false,
+  "eslint.alwaysShowStatus": true,
+  "turboConsoleLog.logMessagePrefix": "",
+  "turboConsoleLog.delimiterInsideMessage": "const",
+  "git.confirmSync": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.bracketPairColorization.enabled": false,
+  "workbench.sideBar.location": "right",
+  "window.zoomLevel": 1,
+  "editor.linkedEditing": true,
+  "workbench.colorTheme": "Plastic",
+  "workbench.colorCustomizations": {
+    "[Plastic]": {
+      "terminal.findMatchHighlightBorder": "#ffffff"
+    }
+  }
+  // For slides
+  // "workbench.statusBar.visible": false,
+  // "workbench.activityBar.visible": false,
+  // "window.title": "${activeEditorShort}",
+  // "workbench.editor.showTabs": false,
+  // "editor.lineNumbers": "off",
+  // "editor.scrollbar.horizontal": "hidden",
+  // "editor.scrollbar.vertical": "hidden",
+  // "editor.hideCursorInOverviewRuler": true,
 }
