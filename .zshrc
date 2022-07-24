@@ -8,10 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME=""
-fpath+=$HOME/.zsh/pure
-autoload -U promptinit; promptinit
-prompt pure
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -101,6 +98,7 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 alias zshconfig="code ~/.zshrc"
+alias ls="ls -la --color=auto"
 # alias ohmyzsh="mate ~/.oh-my-zsh"export PATH="/usr/local/opt/node@16/bin:$PATH"
 
 export ANDROID_HOME=$HOME/Library/Android/sdk
