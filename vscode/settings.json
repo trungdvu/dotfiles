@@ -5,12 +5,8 @@
   "window.newWindowDimensions": "inherit",
   "workbench.editor.untitled.hint": "hidden",
   "workbench.iconTheme": "vscode-icons",
-  "turboConsoleLog.includeFileNameAndLineNum": false,
-  "turboConsoleLog.insertEnclosingClass": false,
-  "turboConsoleLog.insertEnclosingFunction": false,
   "git.autofetch": true,
   "breadcrumbs.enabled": false,
-  "gitlens.showWelcomeOnInstall": false,
   "gitlens.codeLens.authors.enabled": false,
   "gitlens.codeLens.recentChange.enabled": false,
   "gitlens.currentLine.enabled": false,
@@ -78,27 +74,39 @@
   ],
   "git.suggestSmartCommit": false,
   "eslint.alwaysShowStatus": true,
-  "turboConsoleLog.logMessagePrefix": "",
-  "turboConsoleLog.delimiterInsideMessage": "const",
   "git.confirmSync": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "editor.bracketPairColorization.enabled": false,
   "workbench.sideBar.location": "right",
   "window.zoomLevel": 1,
   "editor.linkedEditing": true,
-  "workbench.colorTheme": "Plastic",
-  "workbench.colorCustomizations": {
-    "[Plastic]": {
-      "terminal.findMatchHighlightBorder": "#ffffff"
+  "editor.tokenColorCustomizations": {
+    "[Tokyo Night]": {
+      "textMateRules": [
+        {
+          "scope": [
+            "comment",
+            "meta.var.expr storage.type",
+            "keyword.control.flow",
+            "keyword.control.return",
+            "meta.directive.vue punctuation.separator.key-value.html",
+            "meta.directive.vue entity.other.attribute-name.html",
+            "tag.decorator.js entity.name.tag.js",
+            "tag.decorator.js punctuation.definition.tag.js",
+            "storage.modifier"
+          ],
+          "settings": {
+            "fontStyle": ""
+          }
+        }
+      ]
     }
-  }
-  // For slides
-  // "workbench.statusBar.visible": false,
-  // "workbench.activityBar.visible": false,
-  // "window.title": "${activeEditorShort}",
-  // "workbench.editor.showTabs": false,
-  // "editor.lineNumbers": "off",
-  // "editor.scrollbar.horizontal": "hidden",
-  // "editor.scrollbar.vertical": "hidden",
-  // "editor.hideCursorInOverviewRuler": true,
+  },
+  "terminal.external.osxExec": "xTerm.app",
+  "turboConsoleLog.includeFileNameAndLineNum": false,
+  "turboConsoleLog.insertEnclosingClass": false,
+  "turboConsoleLog.insertEnclosingFunction": false,
+  "turboConsoleLog.delimiterInsideMessage": "var",
+  "turboConsoleLog.logMessagePrefix": "",
+  "workbench.colorTheme": "Tokyo Night"
 }
